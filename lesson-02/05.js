@@ -3,8 +3,12 @@ let passport = {
     surname: "Petrov",
 };
 
-let passportCopy = Object.assign({}, passport); // Создаем копию объекта passport
-passportCopy.name = "Ivan"; // Меняем имя в копии объекта
+// Копирование объекта
+let copiedPassport = { ...passport };
 
-console.log (passport);
-console.log (passportCopy);
+// Изменение имени в копии объекта
+copiedPassport.name = "Ivan";
+
+// Проверка значений исходного и скопированного объектов
+console.log(passport.name); // Выведет: Petr
+console.log(copiedPassport.name); // Выведет: Ivan
