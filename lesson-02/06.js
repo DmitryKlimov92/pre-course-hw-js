@@ -7,12 +7,11 @@ let passportWithAddress = {
     }
 }
 
-let passportBobr = {...passportWithAddress}
 
-passportBobr.address.city = {
-    city: "Bobryisk"
-}
+const passportbobr = JSON.parse(JSON.stringify(passportWithAddress));
 
 
-console.log(passportWithAddress.address);
-console.log(passportBobr.address);
+passportbobr.address.city = 'Bobryisk';
+
+console.log(passportWithAddress);
+console.log(passportbobr);
