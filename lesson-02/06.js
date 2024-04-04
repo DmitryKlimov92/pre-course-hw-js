@@ -9,10 +9,8 @@ let passportWithAddress = {
 
 let passportBobr = {...passportWithAddress}
 
-passportBobr.address = {
-    country: "USA",
-    city: "Bobryisk"
-}
+passportBobr.address.city = 'Bobryisk';
+
 
 
 console.log(passportWithAddress.address);
