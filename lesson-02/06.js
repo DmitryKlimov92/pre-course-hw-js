@@ -9,8 +9,9 @@ let passportWithAddress = {
 
 let passportBobr = {...passportWithAddress}
 
-passportBobr.address.city = 'Bobryisk';
-
+passportBobr.address.city = {
+    city: "Bobryisk"
+}
 
 
 console.log(passportWithAddress.address);
