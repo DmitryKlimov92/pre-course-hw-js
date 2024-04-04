@@ -2,19 +2,31 @@ let passportMarried = {
     name: "Petr",
     surname: "Petrov",
     address: {
-        country: "USA",
-        city: "Bobryisk"
+        "country": "USA",
+        "city": "Bobryisk"
     }
 };
 
+let passportMarried2 = {
+    name: "Petr",
+    surname: "Petrov",
+    address: {
+        "country": "USA",
+        "city": "Bobryisk",
+        married: true
+    }
+};
 
-let passportMarriedCopy = JSON.parse(JSON.stringify(passportMarried));
+/*
 
+const passportMarried2 = JSON.parse(JSON.stringify(passportMarried));
+passportMarried2.married = True;
 
-passportMarriedCopy.married = true;
+ */
 
-
-console.log("Исходный объект passportMarried:");
+/*
+let  passportMarried2 = structuredClone(passportMarried);
+passportMarried2.married = "True";
+ */
 console.log(passportMarried);
-console.log("\nГлубокая копия с информацией о женатости:");
-console.log(passportMarriedCopy);
+console.log(passportMarried2);
